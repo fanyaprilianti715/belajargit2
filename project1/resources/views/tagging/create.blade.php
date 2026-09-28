@@ -114,6 +114,9 @@
                 value="{{ old('assignment_id') }}"
                 required
             >
+            @error('assignment_id')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -124,7 +127,11 @@
                 id="assignment_status_alias"
                 name="assignment_status_alias"
                 value="{{ old('assignment_status_alias') }}"
+                required
             >
+            @error('assignment_status_alias')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -135,7 +142,11 @@
                 id="level_6_full_code"
                 name="level_6_full_code"
                 value="{{ old('level_6_full_code') }}"
+                required
             >
+            @error('level_6_full_code')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -146,7 +157,11 @@
                 id="nama_usaha_bang"
                 name="nama_usaha_bang"
                 value="{{ old('nama_usaha_bang') }}"
+                required
             >
+            @error('nama_usaha_bang')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -157,7 +172,11 @@
                 id="nama_kk"
                 name="nama_kk"
                 value="{{ old('nama_kk') }}"
+                required
             >
+            @error('nama_kk')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -168,7 +187,11 @@
                 id="ada_keluarga_label"
                 name="ada_keluarga_label"
                 value="{{ old('ada_keluarga_label') }}"
+                required
             >
+            @error('ada_keluarga_label')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -179,7 +202,11 @@
                 id="ada_bang_usaha_label"
                 name="ada_bang_usaha_label"
                 value="{{ old('ada_bang_usaha_label') }}"
+                required
             >
+            @error('ada_bang_usaha_label')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -191,7 +218,11 @@
                 id="geotag_accuracy"
                 name="geotag_accuracy"
                 value="{{ old('geotag_accuracy') }}"
+                required
             >
+            @error('geotag_accuracy')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -203,7 +234,11 @@
                 id="geotag_latitude"
                 name="geotag_latitude"
                 value="{{ old('geotag_latitude') }}"
+                required
             >
+            @error('geotag_latitude')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="form-group">
@@ -215,7 +250,11 @@
                 id="geotag_longitude"
                 name="geotag_longitude"
                 value="{{ old('geotag_longitude') }}"
+                required
             >
+            @error('geotag_longitude')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="buttons">

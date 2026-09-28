@@ -30,6 +30,9 @@
                    value="{{ old('assignment_id', $tagging->assignment_id) }}"
                    required
                    style="width: 400px;">
+            @error('assignment_id')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -37,7 +40,11 @@
             <input type="text"
                    name="assignment_status_alias"
                    value="{{ old('assignment_status_alias', $tagging->assignment_status_alias) }}"
+                   required
                    style="width: 400px;">
+            @error('assignment_status_alias')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -45,7 +52,11 @@
             <input type="text"
                    name="level_6_full_code"
                    value="{{ old('level_6_full_code', $tagging->level_6_full_code) }}"
+                   required
                    style="width: 400px;">
+            @error('level_6_full_code')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -53,7 +64,11 @@
             <input type="text"
                    name="nama_usaha_bang"
                    value="{{ old('nama_usaha_bang', $tagging->nama_usaha_bang) }}"
+                   required
                    style="width: 400px;">
+            @error('nama_usaha_bang')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror                  
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -61,7 +76,11 @@
             <input type="text"
                    name="nama_kk"
                    value="{{ old('nama_kk', $tagging->nama_kk) }}"
+                   required
                    style="width: 400px;">
+            @error('nama_kk')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror                  
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -69,7 +88,11 @@
             <input type="text"
                    name="ada_keluarga_label"
                    value="{{ old('ada_keluarga_label', $tagging->ada_keluarga_label) }}"
+                   required
                    style="width: 400px;">
+            @error('ada_keluarga_label')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -77,7 +100,11 @@
             <input type="text"
                    name="ada_bang_usaha_label"
                    value="{{ old('ada_bang_usaha_label', $tagging->ada_bang_usaha_label) }}"
+                   required
                    style="width: 400px;">
+            @error('ada_bang_usaha_label')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -85,7 +112,11 @@
             <input type="text"
                    name="geotag_accuracy"
                    value="{{ old('geotag_accuracy', $tagging->geotag_accuracy) }}"
+                   required
                    style="width: 400px;">
+            @error('geotag_accuracy')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -93,7 +124,11 @@
             <input type="text"
                    name="geotag_latitude"
                    value="{{ old('geotag_latitude', $tagging->geotag_latitude) }}"
+                   required
                    style="width: 400px;">
+            @error('geotag_latitude')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <div style="margin-bottom: 10px;">
@@ -101,7 +136,11 @@
             <input type="text"
                    name="geotag_longitude"
                    value="{{ old('geotag_longitude', $tagging->geotag_longitude) }}"
+                   required
                    style="width: 400px;">
+            @error('geotag_longitude')
+                <div style="color: red;">{{ $message }}</div>
+            @enderror
         </div>
 
         <button type="submit"

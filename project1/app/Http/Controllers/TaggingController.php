@@ -33,15 +33,15 @@ class TaggingController extends Controller
         // Memeriksa data yang dikirim dari form.
         $validated = $request->validate([
             'assignment_id' => 'required|string|max:255|unique:taggings,assignment_id',
-            'assignment_status_alias' => 'nullable|string|max:255',
-            'level_6_full_code' => 'nullable|string|max:255',
-            'nama_usaha_bang' => 'nullable|string|max:255',
-            'nama_kk' => 'nullable|string|max:255',
-            'ada_keluarga_label' => 'nullable|string|max:255',
-            'ada_bang_usaha_label' => 'nullable|string|max:255',
-            'geotag_accuracy' => 'nullable|numeric',
-            'geotag_latitude' => 'nullable|numeric',
-            'geotag_longitude' => 'nullable|numeric',
+            'assignment_status_alias' => 'required|string|max:255',
+            'level_6_full_code' => 'required|string|max:255',
+            'nama_usaha_bang' => 'required|string|max:255',
+            'nama_kk' => 'required|string|max:255',
+            'ada_keluarga_label' => 'required|string|max:255',
+            'ada_bang_usaha_label' => 'required|string|max:255',
+            'geotag_accuracy' => 'required|numeric',
+            'geotag_latitude' => 'required|numeric',
+            'geotag_longitude' => 'required|numeric',
         ]);
 
         // Menyimpan data ke tabel taggings.
@@ -66,15 +66,15 @@ public function update(Request $request, $id)
 
     $validated = $request->validate([
         'assignment_id' => 'required|string|max:255|unique:taggings,assignment_id,' . $id,
-        'assignment_status_alias' => 'nullable|string|max:255',
-        'level_6_full_code' => 'nullable|string|max:255',
-        'nama_usaha_bang' => 'nullable|string|max:255',
-        'nama_kk' => 'nullable|string|max:255',
-        'ada_keluarga_label' => 'nullable|string|max:255',
-        'ada_bang_usaha_label' => 'nullable|string|max:255',
-        'geotag_accuracy' => 'nullable|numeric',
-        'geotag_latitude' => 'nullable|numeric',
-        'geotag_longitude' => 'nullable|numeric',
+        'assignment_status_alias' => 'required|string|max:255',
+        'level_6_full_code' => 'required|string|max:255',
+        'nama_usaha_bang' => 'required|string|max:255',
+        'nama_kk' => 'required|string|max:255',
+        'ada_keluarga_label' => 'required|string|max:255',
+        'ada_bang_usaha_label' => 'required|string|max:255',
+        'geotag_accuracy' => 'required|numeric',
+        'geotag_latitude' => 'required|numeric',
+        'geotag_longitude' => 'required|numeric',
     ]);
 
     $tagging->update($validated);
